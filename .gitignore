@@ -17,6 +17,7 @@
 .DS_Store
 # Ignore application configuration
 /config/application.yml
+/config/database.yml
 /public/uploads/*
 .ruby-version
 .ruby-gemset
