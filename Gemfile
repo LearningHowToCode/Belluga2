@@ -18,7 +18,7 @@ gem 'country_select'
 gem 'fog'
 gem 'will_paginate', '~> 3.0.5'
 gem 'will_paginate-bootstrap', '~> 1.0.0'
-
+gem 'pg'
 
 group :development do
   gem 'letter_opener'
@@ -26,12 +26,7 @@ group :development do
   gem 'quiet_assets'
 end
 
-group :development, :test do
-     gem 'sqlite3'
-end
-
 group :production do
-     gem 'pg'
      gem 'rails_12factor'
      gem 'unicorn'
 end
