@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pairbis</title>
+        <meta name="description" content="英会話から留学相談まで、ハーバードの先生がやさしく教えます。日本語対応の先生もお選びいただけます。">
+        <meta name="google-site-verification" content="4jMD8BuvRkErAo9O-et20oH7gLIlOySyl8tSAxsANB4" />
+        <meta name="msvalidate.01" content="518E3F9C3CEEE8EE278C23C74AD53F6D" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="keywords" content="English Tutor Online, English, 英会話、オンライン英会話、英語学習, Ivy League, Harvard, Yale, Princeton,　Essay Editing, Essay Service, SAT, TOEFL, GRE, GMAT, Online, Tutor, Tutoring, Admissions, Online Tutoring, Online Tutor, online Lesson, Lessons, Harvard Business School, MBA, English learning, ESL, ハーバード, 留学, アメリカ, 大学留学, 大学院留学,  하버드, 哈佛">
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-57658580-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+        <%= favicon_link_tag 'apple-touch-icon-precomposed.png', rel: 'apple-touch-icon', type: 'image/png' %>
+        <%= stylesheet_link_tag    'phone', media: "all", "data-turbolinks-track" => true %>
+        <%= javascript_include_tag "application", 'vendor', "data-turbolinks-track" => true %>
+        <%= javascript_include_tag "https://js.stripe.com/v2/" %>
+        <%= csrf_meta_tags %>
+        <%= tag :meta, :name => "stripe-key", :content => ENV["STRIPE_PUBLIC_KEY"] %>
+    </head>
+    <body>
+        <%= render 'layouts/facebook' %>
+        <%= render 'layouts/header' %>
+        <div class="content">
+            <%= render 'layouts/alerts' %>
+            <%= yield %>
+        </div>  
+    </body>
+</html>

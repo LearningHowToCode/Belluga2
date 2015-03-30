@@ -4,6 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   before_action :configure_permitted_parameters, if: :devise_controller?
   before_action :set_locale
+  before_action :set_device_type
 
   protected
   def configure_permitted_parameters
@@ -18,4 +19,10 @@ class ApplicationController < ActionController::Base
   	{ locale: I18n.locale }
   end
 
+  private
+    def set_device_type
+        request.variant = :phone if browser.mobile?
+        request.variant = :tablet if browser.tablet?
+    end
+  end
 end
