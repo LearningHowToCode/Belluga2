@@ -27,10 +27,9 @@
     </head>
     <body class="phone">
         <%= render 'layouts/facebook' %>
-        <%= render 'layouts/header' %>
-        <div class="content">
-            <%= render 'layouts/alerts' %>
-            <%= yield %>
-        </div>  
+        <%= render 'layouts/phone/left_panel' %>
+        <%= render 'layouts/alerts' %>
+        <%= yield %>
+        <%= javascript_include_tag "phone" %>
     </body>
 </html>
