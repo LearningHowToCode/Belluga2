@@ -25,7 +25,7 @@
         <%= csrf_meta_tags %>
         <%= tag :meta, :name => "stripe-key", :content => ENV["STRIPE_PUBLIC_KEY"] %>
     </head>
-    <body>
+    <body class="phone">
         <%= render 'layouts/facebook' %>
         <%= render 'layouts/header' %>
         <div class="content">
