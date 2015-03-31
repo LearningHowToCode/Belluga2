@@ -6,6 +6,12 @@ class ApplicationController < ActionController::Base
   before_action :set_locale
   before_action :set_device_type
 
+  private
+  def set_device_type
+    binding.pry
+    request.variant = :phone if browser.mobile?
+  end
+
   protected
   def configure_permitted_parameters
     devise_parameter_sanitizer.for(:sign_up) << [:profile_type, :name]
@@ -19,10 +25,4 @@ class ApplicationController < ActionController::Base
   	{ locale: I18n.locale }
   end
 
-  private
-    def set_device_type
-        request.variant = :phone if browser.mobile?
-        request.variant = :tablet if browser.tablet?
-    end
-  end
 end
