@@ -9,17 +9,27 @@
 }
 
 .home-banner{
-	background: image-url('bg-homepage.png') bottom center;
+	background: image-url('Harvard_Campus.jpg');
 	background-repeat:no-repeat;
+	background-position:bottom;
 	background-size: cover;
+	height: 75vh;
 }
 
 .home-banner h1{
-	font-size: 2.5em;
+	font-size: 2.8em;
+	color: #fdfdfd;
 }
+
+.home-banner .slogan{
+	position: relative;
+	top: 25%;
+ }
 
 .home-banner h1, .home-banner h4{
 	margin-bottom: 16px;
+	color: #fdfdfd;
+	font-weight: bold;
 }
 
 .home-footer{

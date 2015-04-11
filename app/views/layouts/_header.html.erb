@@ -26,28 +26,28 @@
                     <li><%= link_to t('search_tutors'), tutors_path %></li>
                     <% if I18n.locale == :en %>
                         <li><%= link_to root_path(locale: 'ja') do %>
-                                <span class="flag-icon flag-icon-jp"></span>
+                                <%= image_tag 'Japanese.png', :title => 'Japanese' %>
                             <% end %>
                         <li><%= link_to root_path(locale: 'cn') do %>
-                                <span class="flag-icon flag-icon-cn"></span>
+                                <%= image_tag 'Chinese.png', :title => 'Chinese' %>
                             <% end %>
                         </li>
                     <% end %>
                     <% if I18n.locale == :ja %>
                         <li><%= link_to root_path(locale: 'en') do %>
-                                <span class="flag-icon flag-icon-us"></span>
+                                <%= image_tag 'English.png', :title => 'Japanese' %>
                             <% end %>
                         <li><%= link_to root_path(locale: 'cn') do %>
-                                <span class="flag-icon flag-icon-cn"></span>
+                                <%= image_tag 'Chinese.png', :title => 'Chinese' %>
                             <% end %>
                         </li>
                     <% end %>
                     <% if I18n.locale == :cn %>
                         <li><%= link_to root_path(locale: 'en') do %>
-                                <span class="flag-icon flag-icon-us"></span>
+                                <%= image_tag 'English.png', :title => 'Japanese' %>
                             <% end %>
                         <li><%= link_to root_path(locale: 'ja') do %>
-                                <span class="flag-icon flag-icon-jp"></span>
+                                <%= image_tag 'Japanese.png', :title => 'Chinese' %>
                             <% end %>
                         </li>
                     <% end %>

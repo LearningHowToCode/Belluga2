@@ -1,13 +1,12 @@
 <body class="homepage">
     <section class="full-width height-two-thirds home-banner">
-        <div class="text-center">
+        <div class="slogan text-center">
             <h1 class="homepage-description"><%=t :welcome_to_pairbis %></h1>
             <h4 class="homepage-description"><%=t :we_will_help %></h4>
             <h4 class="homepage-description"><%=t :we_will_help2 %></h4>
             
             <% if I18n.locale == :ja %>
             <center class="free-lesson-center">
-            <br>
             <%= link_to root_path(anchor: 'free-lesson') do %>
                 <%= image_tag 'Free_Lessons3.gif', width: "280", height: "49", :title => 'Free Lesson' %>
             <% end %>
@@ -52,147 +51,6 @@
         </center>
     </section>
     <% end %>-->
-
-<% if I18n.locale == :en %>
-    <section class="flex bg-grey">
-        <div class="row">
-            <div class="col-md-4">
-                <% if I18n.locale == :ja %>
-                    <div class="text-center">
-                        <%= image_tag 'ESL.png', width: "270", height: "168", :title => '英会話' %>
-                    </div>
-                <% end %> 
-                <h3 class="text-center"><%=t :purpose1 %></h3>
-                <h5 class="text-center"><%=t :purpose1_description1 %></h5>
-                <h5 class="text-center"><%=t :purpose1_description2 %></h5>
-                <h5 class="text-center"><%=t :purpose1_description3 %></h5>
-                <h5 class="text-center"><%=t :purpose1_description4 %></h5>
-                <h5 class="text-center"><%=t :purpose1_description5 %></h5>
-                <div class="button">
-                    <% if I18n.locale == :ja %>
-                        <%= link_to english_path, class: "btn btn-primary btn-lg", data: { no_turbolink: true } do %>詳しくはこちら
-                        <% end %> 
-                    <% end %>
-                    <br>
-                    <br>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <% if I18n.locale == :ja %>
-                    <div class='text-center'>
-                        <%= image_tag 'High_School_Study_Abroad.png', width: "270", height: "168", :title => 'ハーバード大学留学' %>
-                    </div>
-                <% end %>
-                <h3 class="text-center"><%=t :purpose2 %></h3>
-                <h5 class="text-center"><%=t :purpose2_description1 %></h5>
-                <h5 class="text-center"><%=t :purpose2_description2 %></h5>
-                <h5 class="text-center"><%=t :purpose2_description3 %></h5>
-                <h5 class="text-center"><%=t :purpose2_description4 %></h5>
-                <h5 class="text-center"><%=t :purpose2_description5 %></h5>
-                <div class="button">
-                    <% if I18n.locale == :ja %>
-                        <%= link_to root_path(anchor: 'free-lesson'), class: "btn btn-primary btn-lg", data: { no_turbolink: true } do %>ハーバード日本人学生と相談
-                        <% end %> 
-                    <% end %>
-                <br>
-                <br>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <% if I18n.locale == :ja %>
-                    <div class='text-center'>
-                        <%= image_tag 'Baker.png', width: "270", height: "168", :title => 'MBA留学' %>
-                    </div>
-                <% end %>
-                <h3 class="text-center"><%=t :purpose3 %></h3>
-                <h5 class="text-center"><%=t :purpose3_description1 %></h5>
-                <h5 class="text-center"><%=t :purpose3_description2 %></h5>
-                <h5 class="text-center"><%=t :purpose3_description3 %></h5>
-                <h5 class="text-center"><%=t :purpose3_description4 %></h5>
-                <h5 class="text-center"><%=t :purpose3_description5 %></h5>
-                <div class="button">
-                    <% if I18n.locale == :ja %>
-                        <%= link_to graduate_school_path(anchor: 'free-lesson'), class: "btn btn-primary btn-lg", data: { no_turbolink: true } do %>詳しくはこちら
-                        <% end %> 
-                    <% end %>
-                <br>
-                <br>
-                </div>
-            </div>
-        </div>
-    </section>
-<% end %>
-
-<% if I18n.locale == :cn %>
-    <section class="flex bg-grey">
-        <div class="row">
-            <div class="col-md-4">
-                <% if I18n.locale == :ja %>
-                    <div class='text-center'>
-                        <%= image_tag 'ESL.png', width: "270", height: "168", :title => '英会話' %>
-                    </div>
-                <% end %> 
-                <h3 class="text-center"><%=t :purpose1 %></h3>
-                <h5 class="text-center"><%=t :purpose1_description1 %></h5>
-                <h5 class="text-center"><%=t :purpose1_description2 %></h5>
-                <h5 class="text-center"><%=t :purpose1_description3 %></h5>
-                <h5 class="text-center"><%=t :purpose1_description4 %></h5>
-                <h5 class="text-center"><%=t :purpose1_description5 %></h5>
-                <div class="button">
-                    <% if I18n.locale == :ja %>
-                        <%= link_to english_path, class: "btn btn-primary btn-lg", data: { no_turbolink: true } do %>詳しくはこちら
-                        <% end %> 
-                    <% end %>
-                    <br>
-                    <br>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <% if I18n.locale == :ja %>
-                    <div class='text-center'>
-                        <%= image_tag 'High_School_Study_Abroad.png', width: "270", height: "168", :title => 'ハーバード大学留学' %>
-                    </div>
-                <% end %>
-                <h3 class="text-center"><%=t :purpose2 %></h3>
-                <h5 class="text-center"><%=t :purpose2_description1 %></h5>
-                <h5 class="text-center"><%=t :purpose2_description2 %></h5>
-                <h5 class="text-center"><%=t :purpose2_description3 %></h5>
-                <h5 class="text-center"><%=t :purpose2_description4 %></h5>
-                <h5 class="text-center"><%=t :purpose2_description5 %></h5>
-                <div class="button">
-                    <% if I18n.locale == :ja %>
-                        <%= link_to root_path(anchor: 'free-lesson'), class: "btn btn-primary btn-lg", data: { no_turbolink: true } do %>ハーバード日本人学生と相談
-                        <% end %> 
-                    <% end %>
-                <br>
-                <br>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <% if I18n.locale == :ja %>
-                    <div class='text-center'>
-                        <%= image_tag 'Baker.png', width: "270", height: "168", :title => 'ハーバードMBA留学' %>
-                    </div>
-                <% end %>
-                <h3 class="text-center"><%=t :purpose3 %></h3>
-                <h5 class="text-center"><%=t :purpose3_description1 %></h5>
-                <h5 class="text-center"><%=t :purpose3_description2 %></h5>
-                <h5 class="text-center"><%=t :purpose3_description3 %></h5>
-                <h5 class="text-center"><%=t :purpose3_description4 %></h5>
-                <h5 class="text-center"><%=t :purpose3_description5 %></h5>
-                <div class="button">
-                    <% if I18n.locale == :ja %>
-                        <%= link_to graduate_school_path(anchor: 'free-lesson'), class: "btn btn-primary btn-lg", data: { no_turbolink: true } do %>詳しくはこちら
-                        <% end %> 
-                    <% end %>
-                <br>
-                <br>
-                </div>
-            </div>
-        </div>
-    </section>
-<% end %>
-
 
     <section class="flex bg-white">
         <div class="row">
@@ -430,6 +288,7 @@
          <br>
     </section>
 <% end %>
+
 
     <section class="bg-gray" id="contact">
         <div class="row">
