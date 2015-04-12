@@ -2,6 +2,14 @@
   <h1 class="text-center">My Schedule</h1>
 </header>
 
+
+<section>
+  <%= link_to new_lesson_path, class: 'btn btn-primary btn-sm pull-left', data: { no_turbolink: true } do %>
+    <i class="glyphicon glyphicon-plus"></i>
+      New Lesson
+  <% end %>
+</section>
+
 <section class="flex">
   <div class="bg-white full-width content-pad">
     <table class="table table-striped table-bordered">
