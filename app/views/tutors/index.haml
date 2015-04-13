@@ -76,7 +76,10 @@
             .tutor-rate
               %h3.tutor-price
                 = number_to_currency tutor.price
-
+  .row.rm-all
+    .center= will_paginate @tutors, renderer: BootstrapPagination::Rails
+    .center
+      .fb-like{"data-action" => "like", "data-href" => "https://pairbis.com/", "data-layout" => "button_count", "data-share" => "true", "data-show-faces" => "true"}
 
 :javascript
     $(".tutor-star-rating").raty({
