@@ -17,7 +17,7 @@
 }
 
 .home-banner h1{
-	font-size: 2.8em;
+	font-size: 4em;
 	color: #fdfdfd;
 }
 
@@ -30,6 +30,12 @@
 	margin-bottom: 16px;
 	color: #fdfdfd;
 	font-weight: bold;
+	text-shadow: 3px 2px 2px #111111;
+}
+
+.home-banner h4{
+	font-weight: 400;
+	font-size: 1.6em;
 }
 
 .home-footer{
@@ -115,6 +121,12 @@
 	.for-tutors header{
 		background-size: 75px;
 		padding: 30px 0px;
+	}
+	.home-banner .slogan{
+		top: 20%;
+	}
+	.home-banner h1{
+		font-size: 3em;
 	}
 }
 
