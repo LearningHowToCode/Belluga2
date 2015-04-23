@@ -151,6 +151,19 @@ section.sm{
 	justify-content: space-between;
 }
 
+.row.row-table {
+  width: 100%;
+  width: calc(100% + 30px);
+}
+
+.row.row-full-height {
+  height: 100%;
+}
+
+.row-table {
+  display: table;
+  table-layout: fixed;
+}
 
 .reg-header{
 	padding: 40px 36px 0px 36px;

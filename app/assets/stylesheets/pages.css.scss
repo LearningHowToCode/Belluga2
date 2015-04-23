@@ -17,7 +17,7 @@
 }
 
 .home-banner h1{
-	font-size: 2.8em;
+	font-size: 4em;
 	color: #fdfdfd;
 }
 
@@ -30,6 +30,12 @@
 	margin-bottom: 16px;
 	color: #fdfdfd;
 	font-weight: bold;
+	text-shadow: 3px 2px 2px #111111;
+}
+
+.home-banner h4{
+	font-weight: 400;
+	font-size: 1.6em;
 }
 
 .home-footer{
@@ -86,6 +92,89 @@
 	line-height: 1.5;
 }
 
+.choose-lessons .col-md-3 a{
+	height: 492px;
+	position: relative;
+	display: block;
+	padding: 0px;
+}
+
+.academic-discussion .media-cover{
+	background: image-url('academic-discussion.jpg') no-repeat;
+	background-size: cover;
+	position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.business-discussion .media-cover{
+	background: image-url('business-discussion.jpg') no-repeat;
+	background-size: cover;
+	position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.us-study .media-cover{
+	background: image-url('us-study-support.jpg') no-repeat;
+	background-size: cover;
+	position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.mba-study .media-cover{
+	background: image-url('mba-study-support.jpg') no-repeat;
+	background-size: cover;
+	position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.academic-discussion .media-text-inner{
+	 background-color: #3f768a;
+}
+
+.business-discussion .media-text-inner{
+	 background-color: #01a89e;
+}
+
+.us-study .media-text-inner{
+	 background-color: #408b62;
+}
+
+.mba-study .media-text-inner{
+	 background-color: #608c41;
+}
+
+.media-text{
+	vertical-align: bottom;
+	float: none;
+  display: table-cell;
+  width: 100%;
+  position: relative;
+}
+.media-text-inner{
+	padding: 24px;
+	margin: 0px 15px;
+}
+.media-text h3{
+	color: white;
+	margin-top: 0px;
+	font-size: 18px;
+}
+.media-text p{
+	color: white;
+	font-size: 13px;
+}
 
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -115,6 +204,12 @@
 	.for-tutors header{
 		background-size: 75px;
 		padding: 30px 0px;
+	}
+	.home-banner .slogan{
+		top: 20%;
+	}
+	.home-banner h1{
+		font-size: 3em;
 	}
 }
 
