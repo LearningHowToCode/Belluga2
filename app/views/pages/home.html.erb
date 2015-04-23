@@ -99,36 +99,64 @@
     <% end %>
 
 <% if I18n.locale == :ja %>
-    <section class="flex bg-grey">
+    <section class="flex bg-grey choose-lessons">
         <div class="row">
             <h2 class="bottom-margin text-center">レッスンを選ぶ</h2>
             <br>
             <div class="col-md-3 xs-mg-bottom academic-discussion">
                 <%= link_to english_path, data: { no_turbolink: true } do %>
-                <h3 class="text-center">アカデミック・ディスカッション</h3>
-                <p class="text-center">マイケル・サンデル教授の授業「Justice（正義）」のテーマを用いたハーバードの先生とのレッスンを通して、自分の考え・意見を的確に表現できるようになりましょう。</p>
-                詳しくはこちら
+                <div class="media-cover"></div>
+                <div class="row row-table row-full-height">
+                    <div class="media-text">
+                        <div class="media-text-inner">
+                            <h3 class="text-center">アカデミック・ディスカッション</h3>
+                            <p class="text-center">マイケル・サンデル教授の授業「Justice（正義）」のテーマを用いたハーバードの先生とのレッスンを通して、自分の考え・意見を的確に表現できるようになりましょう。</p>
+                            <p class="text-center rm-bottom">詳しくはこちら</p>
+                        </div>
+                    </div>
+                </div>
                 <% end %> 
             </div>
             <div class="col-md-3 xs-mg-bottom business-discussion">
                 <%= link_to business_path, data: { no_turbolink: true } do %>
-                <h3 class="text-center">ビジネス・ディスカッション</h3>
-                <p class="text-center">ハーバード流の交渉ケース、コンサルティング・ファーム面接に使われるケースを用いたハーバードの先生とのレッスンを通して、アメリカ人と対等に話すスキルを学びましょう。</p>
-                詳しくはこちら
+                <div class="media-cover"></div>
+                <div class="row row-table row-full-height">
+                    <div class="media-text">
+                        <div class="media-text-inner">
+                            <h3 class="text-center">ビジネス・ディスカッション</h3>
+                            <p class="text-center">ハーバード流の交渉ケース、コンサルティング・ファーム面接に使われるケースを用いたハーバードの先生とのレッスンを通して、アメリカ人と対等に話すスキルを学びましょう。</p>
+                            <p class="text-center rm-bottom">詳しくはこちら</p>
+                        </div>
+                    </div>
+                </div>
                 <% end %>
             </div>
             <div class="col-md-3 xs-mg-bottom us-study">
                 <%= link_to root_path(anchor: 'free-lesson'), data: { no_turbolink: true } do %>
-                <h3 class="text-center">米国大学留学サポート</h3>
-                <p class="text-center">ハーバード大学に合格した先生に相談をして、受験のアドバイスをもらったり、エッセイの添削や出願準備を手伝ってもらいましょう。先生は日本人・アメリカ人両方ご用意いたしております。</p>
-                ハーバード日本人学生と相談
+                <div class="media-cover"></div>
+                <div class="row row-table row-full-height">
+                    <div class="media-text">
+                        <div class="media-text-inner">
+                            <h3 class="text-center">米国大学留学サポート</h3>
+                            <p class="text-center">ハーバード大学に合格した先生に相談をして、受験のアドバイスをもらったり、エッセイの添削や出願準備を手伝ってもらいましょう。先生は日本人・アメリカ人両方ご用意いたしております。</p>
+                            <p class="text-center rm-bottom">ハーバード日本人学生と相談</p>
+                        </div>
+                    </div>
+                </div>
                 <% end %> 
             </div>
             <div class="col-md-3 xs-mg-bottom mba-study">
                 <%= link_to graduate_school_path, data: { no_turbolink: true } do %>
-                <h3 class="text-center">米国MBA留学サポート</h3>
-                <p class="text-center">ハーバードビジネススクールに合格した先生に相談をして、受験のアドバイスをもらったり、エッセイの添削や出願準備を手伝ってもらいましょう。先生は日本人・アメリカ人両方ご用意いたしております。</p>
-                詳しくはこちら
+                <div class="media-cover"></div>
+                <div class="row row-table row-full-height">
+                    <div class="media-text">
+                        <div class="media-text-inner">
+                            <h3 class="text-center">米国MBA留学サポート</h3>
+                            <p class="text-center">ハーバードビジネススクールに合格した先生に相談をして、受験のアドバイスをもらったり、エッセイの添削や出願準備を手伝ってもらいましょう。先生は日本人・アメリカ人両方ご用意いたしております。</p>
+                            <p class="text-center rm-bottom">詳しくはこちら</p>
+                        </div>
+                    </div>
+                </div>
                 <% end %>
             </div>
         </div>
