@@ -46,7 +46,11 @@ module ApplicationHelper
                      end
     tutor_offset   = ActiveSupport::TimeZone[tutor_zone_s].try :utc_offset
 
-    viewer_zone_s  = viewer.try(:timezone) ? viewer.timezone : default_zone_abbr
+    viewer_zone_s  = if viewer.try(:timezone).present?
+                       viewer.timezone
+                     else
+                       default_zone_abbr
+                     end
     viewer_offset  = ActiveSupport::TimeZone[viewer_zone_s].try :utc_offset
 
     time + viewer_offset - tutor_offset
